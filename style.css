@@ -1,0 +1,129 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  margin: 2rem;
+  font-family: helvetica, arial, sans-serif;
+  background-color: slategray;
+  color: black;
+}
+
+h1 {
+  font-family: verdana, arial, sans-serif;
+}
+
+button {
+  padding: 12px;
+  border-radius: 10px;
+  color: black;
+  background: crimson;
+  
+}
+
+#strikeArea > button {
+  float: right;
+  border-radius: 30px;
+}
+
+#timerArea > button {
+  width: 1300px;
+  margin-left: 0px;
+  margin-top: 90px;
+  text-align: center;
+  color: red;
+  background: black;
+  border-radius: 0px;
+}
+
+#gameButtonArea > button {
+  width: 175px;
+  height: 175px;
+  margin: 8.5px;
+  margin-top: 80px;
+  float: left;
+  
+}
+.hidden {
+  display: none;
+}
+
+#button1 {
+  background: lightgreen; 
+}
+#button1:active, #button1.lit {
+  background: green;
+}
+
+#button2 {
+  background: lightblue; 
+}
+#button2:active, #button2.lit {
+  background: blue;
+  content:
+}
+
+#button3 {
+  background: tomato; 
+}
+#button3:active, #button3.lit {
+  background: red;
+}
+
+#button4 {
+  background: orange; 
+}
+#button4:active, #button4.lit {
+  background: darkorange;
+}
+
+#button5 {
+  background: darkorchid; 
+}
+#button5:active, #button5.lit {
+  background: darkmagenta;
+}
+
+#button6 {
+  background: yellow; 
+}
+#button6:active, #button6.lit {
+  background: gold;
+}
+
+#strike1 {
+  background: slategray;
+}
+
+#strike2 {
+  background: slategray;
+}
+
+#strike3 {
+  background: slategray;
+}
+	
+
+
+
+
+
+
+
+
+
+/* images and videos max out at full width */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
