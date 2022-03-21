@@ -50,17 +50,22 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
-[Emojipedia.org;
+Emojipedia.org;
+
 Freesoundslibrary.com/buzzer-sound/;
+
 Unicode-table.com/en/274C/;
+
 W3schools.com;
+
 www.javatpoint.com > how=to-center-a-button-in-css;
-en.wikipedia.org/wiki/Piano-key-frequencies;]
+
+en.wikipedia.org/wiki/Piano-key-frequencies;
 
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
 
-[One of the challenges I encountered while creating this project was trying the implement the three strikes system. This most challenging part of this task was trying to create a function to show a strike when a player made a mistake in guessing the pattern sequence and developing a way to track the number of mistakes so after the player made three mistakes the loseGameStrikes() function could be called. First I created a container which held three buttons in the HTML code. I then added the hidden class to the buttons in this container, so the buttons would not be shown at the start of the game. Next, I had to position the buttons on the screen so they did not collide with the other elements on the screen. After researching style.css and playing around with it, the float: functionality really came in handy to help me position the container in a reasonable space. Then I created a function called showStrike() which removed the hidden class from a specific button in the container called “strikeArea”. Next, I created a function called addStrike() which  would reveal a strike on the screen if the player made a mistake. I accomplished this by creating a variable called strikeProgress and incrementing it by one ever time the function addStrike() was called. After incrementing the variable, I then added the setTimeout() function in the addStrike() function to call the function showStrike() after 0 milliseconds passing it the value of strikeProgress as an argument since the function showStrike() has a parameter. The value stored in strikeProgress is now used to remove the hidden class from the specific button in the container “strikeArea”. The buttons in “strikeArea  id’s are button#, so if the initial value of strikeProgress is zero and then the function addStrike is called, strikeProgress now contains a value of one and then passes this as an argument to the showStrike() function which then would remove the hidden class from the button’s id which is button1. Finally, I added the addStrike() function to the else statement in the guess() function proceeded by a setTimeout() function that called the playClueSequence() function after 2000 milliseconds. Lastly, I created another if condition in the guess() function which calls the loseGameStrikes() function if strikeProgress can be compared to three.]
+One of the challenges I encountered while creating this project was trying the implement the three strikes system. This most challenging part of this task was trying to create a function to show a strike when a player made a mistake in guessing the pattern sequence and developing a way to track the number of mistakes so after the player made three mistakes the loseGameStrikes() function could be called. First I created a container which held three buttons in the HTML code. I then added the hidden class to the buttons in this container, so the buttons would not be shown at the start of the game. Next, I had to position the buttons on the screen so they did not collide with the other elements on the screen. After researching style.css and playing around with it, the float: functionality really came in handy to help me position the container in a reasonable space. Then I created a function called showStrike() which removed the hidden class from a specific button in the container called “strikeArea”. Next, I created a function called addStrike() which  would reveal a strike on the screen if the player made a mistake. I accomplished this by creating a variable called strikeProgress and incrementing it by one ever time the function addStrike() was called. After incrementing the variable, I then added the setTimeout() function in the addStrike() function to call the function showStrike() after 0 milliseconds passing it the value of strikeProgress as an argument since the function showStrike() has a parameter. The value stored in strikeProgress is now used to remove the hidden class from the specific button in the container “strikeArea”. The buttons in “strikeArea  id’s are button#, so if the initial value of strikeProgress is zero and then the function addStrike is called, strikeProgress now contains a value of one and then passes this as an argument to the showStrike() function which then would remove the hidden class from the button’s id which is button1. Finally, I added the addStrike() function to the else statement in the guess() function proceeded by a setTimeout() function that called the playClueSequence() function after 2000 milliseconds. Lastly, I created another if condition in the guess() function which calls the loseGameStrikes() function if strikeProgress can be compared to three.
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
 []
@@ -78,7 +83,7 @@ en.wikipedia.org/wiki/Piano-key-frequencies;]
 
 ## License
 
-    Copyright [Xavier Hall]
+    Copyright Xavier Hall
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
