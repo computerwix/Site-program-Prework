@@ -71,7 +71,7 @@ If I had a few more hours to work on the project I would refactor the function s
 
 ## Interview Recording URL Link
 
-[My 5-minute Interview Recording](your-link-here)
+[My 5-minute Interview Recording](https://www.loom.com/share/52f81fcb03c04285ada716ae916a5ff9)
 
 
 ## License
